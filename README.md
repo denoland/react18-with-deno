@@ -60,7 +60,7 @@ The key components to focus on here are `App.tsx` and `index.tsx`.
 
 This file contains the main React app, which is composed of components linked from `/src/components/` and links to pages pulled from `/src/pages/`:
 
-```
+```tsx
 import { Navigate, React, Route, Routes } from "../deps.client.ts";
 import { NavBar } from "./components/NavBar.tsx";
 import { HomePage } from "./pages/HomePage.tsx";
@@ -90,7 +90,7 @@ For routing, we’re using `[ReactRouter](https://reactrouter.com/) v6`, which e
 
 While `/src/App.tsx` contains the React app, `/src/index.tsx` does the heavy lifting of binding that app to the DOM:
 
-```index.tsx
+```tsx
 import { BrowserRouter, React, ReactDOM } from "../deps.client.ts";
 import App from "./App.tsx";
 
